@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --page-color: rgb(236, 111, 44);
+}
+
+.container {
+  max-width: 1350px;
+  margin: 5% auto;
+  min-height: 100vh;
+}
+
+/* Wrapper Main */
+.main-container {
+  display: flex;
+}
+
+.main-content {
+  position: relative;
+  width: 70%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(226, 218, 196, 0.588);
+}
+
+/* Wrapper Main Navbar */
+.navbar {
+  position: absolute;
+  left: 50px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50% / 10%;
+  padding: 30px;
+  box-shadow: 2px 2px 5px #a8a5a5;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 35px 0;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  color: #777575f8;
+}
+
+.navbar ul li a:hover {
+  color: var(--page-color);
+}
+
+/* Wrapper Main Content */
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 60px;
+}
+
+.heading p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.heading button {
+  background: var(--page-color);
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.heading button:hover {
+  transform: translateY(-4px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+/* Side Bar */
+.sidebar {
+  width: 30%;
+  background: #333;
+  color: #bfbdaf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar img {
+  width: 9rem;
+  margin-bottom: 30px;
+  border: 8px solid rgb(108, 15, 15);
+  border-radius: 50%;
+}
+
+.my-name {
+  font-size: 35px;
+}
+
+.sidebar p {
+  margin: 20px 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.sidebar a {
+  color: #bfbdaf;
+}
+
+.sidebar a:hover {
+  color: var(--page-color);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
